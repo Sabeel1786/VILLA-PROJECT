@@ -204,11 +204,13 @@ main .property-banner img {
 .single-property-info .address span {
     font-size: 30px;
     font-weight: bold;
-   
+
 }
-.single-property-info .address{
-     padding: 0px 0px 30px 0px;
+
+.single-property-info .address {
+    padding: 0px 0px 30px 0px;
 }
+
 .single-property-info {
     padding: 0px 0px 0px 280px;
     position: relative;
@@ -220,9 +222,10 @@ main .property-banner img {
     width: 60%;
 }
 
-.dropdown .accordion-button:hover{
+.dropdown .accordion-button:hover {
     color: #F1551A;
 }
+
 .single-property-bestdeal {
     width: 100%;
     height: 600px;
@@ -287,7 +290,7 @@ main .property-banner img {
     font-weight: bold;
 }
 
-.single-property-bestdeal .top{
+.single-property-bestdeal .top {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -342,6 +345,7 @@ main .property-banner img {
     color: lightgray;
     font-size: small;
 }
+
 .single-property-bestdeal .bottom img {
     width: 400px;
     height: 280px;
@@ -393,7 +397,8 @@ footer .footer .footer-content {
 
 
 }
-.scroll-btn .sc-btn a button{
+
+.scroll-btn .sc-btn a button {
     background-color: black;
     color: white;
     width: 30px;
@@ -401,21 +406,462 @@ footer .footer .footer-content {
     border-radius: 50px;
     border: none;
 }
-.scroll-btn{
+
+.scroll-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px 0px;
 }
-.scroll-btn .sc-btn{
+
+.scroll-btn .sc-btn {
     padding: 0px 2px;
 }
-.scroll-btn .sc-btn a button:hover{
+
+.scroll-btn .sc-btn a button:hover {
     background-color: #F1551A;
 }
-.single-property-info .single-property-content .top{
+
+.single-property-info .single-property-content .top {
     padding: 35px 0px;
 }
-.single-property-content .bottom{
+
+.single-property-content .bottom {
     padding: 0px 0px 70px 0px;
+}
+
+/* media queries */
+
+@media (max-width: 993px) {
+    .info {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        height: 40px;
+        padding: 0 30px;
+    }
+
+    .info span {
+        font-size: 14px;
+        padding-right: 40px;
+    }
+
+    .info .right {
+        font-size: 22px;
+        gap: 10px;
+    }
+
+    .nav2 {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        height: 85px;
+        padding: 0 45px;
+    }
+
+    .nav2 h1 {
+        font-size: 35px;
+    }
+
+    .nav2 ul li {
+        padding: 0 20px;
+        font-size: 14px;
+    }
+
+    .nav2 ul button {
+        width: 115px;
+        height: 30px;
+        font-size: 14px;
+        margin-right: 24px;
+    }
+
+    main .property-banner img {
+        height: 500px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .feature-box,
+    .Deal-box {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .single-property-details {
+        flex-direction: row;
+        gap: 45px;
+    }
+
+    .single-property-info {
+        padding: 0 280px;
+        bottom: 125px;
+    }
+
+    .single-property-bestdeal {
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 30px 20px;
+    }
+
+    .single-property-bestdeal .top {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .single-property-bestdeal .D-content {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .single-property-bestdeal .D-btn {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .single-property-bestdeal .D-btn button {
+        width: 100%;
+        max-width: 140px;
+    }
+
+    .single-property-bestdeal .bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .single-property-bestdeal .bottom img {
+        width: 400px;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .single-property-bestdeal .Deal-right-cont {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .info {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 7px;
+        padding: 6px 15px;
+        height: auto;
+    }
+
+    .info span {
+        font-size: 13px;
+        padding-right: 20px;
+    }
+
+    .info .right {
+        font-size: 18px;
+        gap: 8px;
+    }
+
+    .nav2 {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        height: 85px;
+        padding: 10px 20px;
+    }
+
+    .nav2 h1 {
+        font-size: 28px;
+        padding: 0 10px;
+    }
+
+    .nav2 ul li {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+
+    .nav2 ul button {
+        width: 100px;
+        height: 28px;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    main .property-banner img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .p-banner-cont {
+        bottom: 220px;
+    }
+
+    .p-banner-cont h1 {
+        font-size: 24px;
+    }
+
+    .property-btn {
+        bottom: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .feature-box,
+    .Deal-box {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .single-property-details {
+        flex-direction: column;
+        gap: 20px;
+        bottom: 120px;
+    }
+
+    .single-property-info {
+        padding: 0 20px;
+        bottom: 100px;
+    }
+
+    .single-property-info .dropdown {
+        width: 100%;
+    }
+
+    .single-property-bestdeal {
+        min-height: 650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 20px 10px;
+    }
+
+    .single-property-bestdeal .top {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .single-property-bestdeal .D-content,
+    .single-property-bestdeal .D-btn {
+        width: auto;
+        flex: 1;
+        min-width: 180px;
+    }
+
+    .single-property-bestdeal .D-btn button {
+        width: 100%;
+        max-width: 140px;
+    }
+
+    .single-property-bestdeal .bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .single-property-bestdeal .bottom img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .single-property-bestdeal .bottom .Deal-right-cont {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .scroll-btn {
+        padding: 40px 0;
+    }
+
+    footer .footer {
+        height: auto;
+        flex-direction: column;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        padding: 5px 10px;
+        height: auto;
+    }
+
+    .info span {
+        font-size: 12px;
+        padding-right: 0;
+    }
+
+    .info .right {
+        font-size: 16px;
+        gap: 5px;
+    }
+
+    .nav2 {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 85px;
+        padding: 8px 10px;
+    }
+
+    .nav2 h1 {
+        font-size: 22px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav2 ul li {
+        padding: 3px 5px;
+        font-size: 12px;
+    }
+
+    .nav2 ul button {
+        width: 90px;
+        height: 28px;
+        font-size: 11px;
+        margin-right: 5px;
+    }
+
+    main .property-banner img {
+        height: 600px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .p-banner-cont {
+        bottom: 180px;
+    }
+
+    .p-banner-cont h1 {
+        font-size: 20px;
+    }
+
+    .property-btn {
+        bottom: 80px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .feature-box,
+    .Deal-box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .single-property-details {
+        flex-direction: column;
+        gap: 15px;
+        bottom: 100px;
+    }
+
+    .single-property-info {
+        padding: 0 10px;
+        bottom: 80px;
+    }
+
+    .single-property-info .dropdown {
+        width: 100%;
+    }
+
+    .single-property-bestdeal {
+        min-height: 750px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+        padding: 20px 5px;
+    }
+
+    .single-property-bestdeal .top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        gap: 15px;
+    }
+
+    .single-property-bestdeal .D-content {
+        flex: 1;
+        min-width: 180px;
+    }
+
+    .single-property-bestdeal .D-btn {
+        flex: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-left: 10px;
+    }
+
+    .single-property-bestdeal .D-btn button {
+        width: 100%;
+        max-width: 140px;
+        margin: 5px 0;
+    }
+
+    .single-property-bestdeal .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .single-property-bestdeal .bottom img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .single-property-bestdeal .bottom .Deal-right-cont {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .scroll-btn {
+        padding: 30px 0;
+    }
+
+    footer .footer {
+        height: auto;
+        flex-direction: column;
+        padding: 12px 0;
+    }
 }

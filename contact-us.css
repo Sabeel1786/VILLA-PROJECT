@@ -251,7 +251,384 @@ footer .footer .footer-content {
 
 
 }
-.contact-us .right .forms .col-12 button{
+
+.contact-us .right .forms .col-12 button {
     border-radius: 20px;
     background-color: black;
+}
+
+/* media queries */
+
+@media (max-width: 992px) {
+    .info {
+        height: auto;
+        padding: 6px 15px;
+        gap: 7px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .info span {
+        font-size: 13px;
+        padding-right: 20px;
+    }
+
+    .info .right {
+        font-size: 18px;
+        gap: 8px;
+    }
+
+    .nav2 {
+        height: 85px;
+        padding: 10px 20px;
+    }
+
+    .nav2 h1 {
+        font-size: 28px;
+        padding: 0 10px;
+    }
+
+    .nav2 ul li {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+
+    .nav2 ul button {
+        width: 100px;
+        height: 28px;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    main .property-banner img {
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .p-banner-cont {
+        bottom: 220px;
+    }
+
+    .p-banner-cont h1 {
+        font-size: 24px;
+    }
+
+    .property-btn {
+        bottom: 100px;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feature-box,
+    .Deal-box {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .single-property-details {
+        flex-direction: column;
+        gap: 20px;
+        bottom: 120px;
+    }
+
+    .single-property-info {
+        padding: 0 20px;
+        bottom: 100px;
+    }
+
+    .single-property-info .dropdown {
+        width: 100%;
+    }
+
+    .single-property-bestdeal {
+        min-height: 650px;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .single-property-bestdeal .top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    .single-property-bestdeal .D-content {
+        flex: 1;
+        min-width: 180px;
+    }
+
+    .single-property-bestdeal .D-btn {
+        flex: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-left: 10px;
+    }
+
+    .single-property-bestdeal .D-btn button {
+        width: 100%;
+        max-width: 150px;
+        margin: 5px 0;
+    }
+
+    .single-property-bestdeal .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .single-property-bestdeal .bottom img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .single-property-bestdeal .bottom .Deal-right-cont {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .contact-us {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        bottom: 80px;
+    }
+
+    .contact-us .forms {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+
+    .contact-us .get-in-touch {
+        width: 100%;
+        text-align: center;
+        font-size: 28px;
+        padding-bottom: 15px;
+    }
+
+    .cont-card .cards {
+        flex-direction: column;
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    main .livemaps iframe {
+        width: 100%;
+        height: 300px;
+        bottom: 10px;
+    }
+
+    .scroll-btn {
+        padding: 40px 0;
+    }
+
+    footer .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .info {
+        height: auto;
+        padding: 5px 10px;
+        gap: 5px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info span {
+        font-size: 12px;
+        padding-right: 0;
+    }
+
+    .info .right {
+        font-size: 16px;
+        gap: 5px;
+    }
+
+    .nav2 {
+        height: 85px;
+        padding: 8px 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav2 h1 {
+        font-size: 22px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav2 ul li {
+        padding: 3px 5px;
+        font-size: 12px;
+    }
+
+    .nav2 ul button {
+        width: 90px;
+        height: 28px;
+        font-size: 11px;
+        margin-right: 5px;
+    }
+
+    main .property-banner img {
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .p-banner-cont {
+        bottom: 180px;
+    }
+
+    .p-banner-cont h1 {
+        font-size: 20px;
+    }
+
+    .property-btn {
+        bottom: 80px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .feature-box,
+    .Deal-box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .single-property-details {
+        flex-direction: column;
+        gap: 15px;
+        bottom: 100px;
+    }
+
+    .single-property-info {
+        padding: 0 10px;
+        bottom: 80px;
+    }
+
+    .single-property-info .dropdown {
+        width: 100%;
+    }
+
+    .single-property-bestdeal {
+        min-height: 750px;
+        padding: 15px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .single-property-bestdeal .top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .single-property-bestdeal .D-content,
+    .single-property-bestdeal .D-btn {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .single-property-bestdeal .D-btn {
+        padding-left: 0;
+    }
+
+    .single-property-bestdeal .D-btn button {
+        width: 100%;
+        max-width: 140px;
+        margin: 5px auto;
+    }
+
+    .single-property-bestdeal .bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .single-property-bestdeal .bottom img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .single-property-bestdeal .bottom .Deal-right-cont {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .contact-us {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        bottom: 60px;
+    }
+
+    .contact-us .forms {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .contact-us .get-in-touch {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+
+    .cont-card .cards {
+        flex-direction: column;
+        width: 95%;
+        margin: 10px 0;
+    }
+
+    main .livemaps iframe {
+        width: 100%;
+        height: 250px;
+        bottom: 0px;
+    }
+
+    .scroll-btn {
+        padding: 30px 0;
+    }
+
+    footer .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 12px 0;
+    }
 }
