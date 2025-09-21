@@ -687,76 +687,88 @@ footer .footer .footer-content {
    Responsive Media Queries
 ============================== */
 
-/* Medium Devices (Tablets: up to 992px) */
 @media (max-width: 992px) {
-
-    /* Info Bar */
     .info {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
         text-align: center;
-        gap: 5px;
-        padding: 5px 20px;
+        gap: 8px;
+        padding: 6px 15px;
         height: auto;
     }
 
     .info span {
         font-size: 13px;
-        padding-right: 0;
+        padding: 0 5px;
     }
 
     .info .right {
         font-size: 18px;
         gap: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    /* Navigation */
     .nav2 {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
         height: auto;
-        padding: 10px 0;
+        padding: 8px 15px;
+        gap: 8px;
     }
 
     .nav2 h1 {
-        font-size: 28px;
+        font-size: 24px;
+        margin: 0;
         padding: 0;
-        margin-bottom: 10px;
     }
 
     .nav2 ul {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
     }
 
     .nav2 ul li {
-        padding: 5px 0;
         font-size: 13px;
+        padding: 4px 6px;
     }
 
     .nav2 ul button {
-        width: 90%;
-        max-width: 140px;
         font-size: 12px;
-        margin: 5px auto;
+        padding: 4px 8px;
+        max-width: 120px;
     }
 
-    /* Banner */
-    .banner,
-    .banner img {
+    .banner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
         height: auto;
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     .banner h1,
     .box {
+        position: absolute;
         left: 5%;
-        bottom: 60%;
-        font-size: clamp(18px, 4vw, 28px);
+        bottom: 50%;
+        font-size: clamp(18px, 4vw, 26px);
+        margin: 0;
     }
 
-    /* Featured Section */
     .featured {
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
@@ -764,15 +776,14 @@ footer .footer .footer-content {
     }
 
     .feature-box {
-        width: calc(50% - 20px);
-        /* 2 cards per row with gap */
+        flex: 1 1 calc(50% - 20px);
         min-width: 220px;
+        max-width: 300px;
         height: auto;
-        margin-bottom: 20px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 10px;
+        gap: 12px;
     }
 
     .feature-box img,
@@ -782,71 +793,73 @@ footer .footer .footer-content {
         height: clamp(40px, 6vw, 50px);
     }
 
-    .feature-box .f-content {
-        flex: 1;
-    }
-
-    /* Video Section */
-    .video-view {
-        height: auto;
-    }
-
-    .video-view img {
-        width: 100%;
-        height: auto;
-    }
-
-    .video-content {
-        bottom: auto;
-        position: static;
-        text-align: center;
-    }
-
-    /* Properties Section */
     .property-cards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         gap: 20px;
         justify-items: center;
+        align-items: stretch;
+        margin: 20px 0 40px;
         position: relative;
-        z-index: 10;
-        /* ensure cards are in front */
+        z-index: 1;
     }
 
     .p-card {
         width: 100%;
-        max-width: 280px;
+        max-width: 300px;
         height: auto;
         background-color: #FBFBFB;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
     }
 
     .p-card img {
+        width: 100%;
         height: auto;
+        object-fit: cover;
     }
 
-    /* Deals Section */
+    .Deal {
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .Deal .top,
     .Deal .bottom {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
     }
 
     .Deal-box {
-        width: 100%;
-        max-width: 225px;
+        flex: 1 1 220px;
+        max-width: 250px;
         margin-bottom: 20px;
-    }
-
-    .bottom {
+        display: flex;
         flex-direction: column;
-        gap: 15px;
-        padding: 0 20px;
+        align-items: center;
     }
 
-    /* Contact Section */
+    .Deal-box img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px;
+    }
+
+    .contact-us {
+        width: 100%;
+        padding: 20px 0;
+    }
+
     .contact-us .maps-form {
         flex-direction: column;
         gap: 15px;
@@ -856,42 +869,42 @@ footer .footer .footer-content {
     .contact-us .maps-form iframe,
     .contact-us .maps-form .forms {
         width: 95%;
+        max-width: 500px;
         height: auto;
     }
 
     .cont-card {
         flex-direction: column;
-        gap: 10px;
-        bottom: auto;
-        left: auto;
+        gap: 12px;
         width: 90%;
         margin: 0 auto;
     }
 
-    /* Footer */
     footer .footer {
         flex-direction: column;
-        height: auto;
         padding: 15px 0;
+        gap: 10px;
+    }
+
+    .v-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
     }
 }
 
-/* Small Devices (Mobiles: up to 576px) */
 @media (max-width: 576px) {
-
-    /* Info Bar */
     .info {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 4px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
         padding: 5px 10px;
-        height: auto;
     }
 
     .info span {
         font-size: 12px;
-        padding-right: 0;
     }
 
     .info .right {
@@ -899,59 +912,68 @@ footer .footer .footer-content {
         gap: 6px;
     }
 
-    /* Navigation */
     .nav2 {
-        flex-direction: column;
-        height: auto;
-        padding: 5px 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 6px 10px;
+        gap: 6px;
     }
 
     .nav2 h1 {
-        font-size: 22px;
-        margin-bottom: 5px;
+        font-size: 20px;
     }
 
     .nav2 ul {
-        flex-direction: column;
-        gap: 5px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6px;
+        justify-content: center;
     }
 
     .nav2 ul li {
-        font-size: 12px;
-        padding: 3px 0;
+        font-size: 11px;
+        padding: 3px 4px;
     }
 
     .nav2 ul button {
-        width: 90%;
-        max-width: 120px;
         font-size: 11px;
-        margin: 4px auto;
+        padding: 3px 6px;
+        max-width: 110px;
     }
 
-    /* Banner */
-    .banner,
-    .banner img {
+    .banner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
         height: auto;
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     .banner h1,
     .box {
+        position: absolute;
         left: 5%;
-        bottom: 55%;
-        font-size: clamp(16px, 5vw, 24px);
+        bottom: 50%;
+        font-size: clamp(16px, 5vw, 22px);
+        margin: 0;
     }
 
-    /* Featured Section */
     .featured {
         flex-direction: column;
         gap: 15px;
-        height: auto;
+        width: 100%;
     }
 
     .feature-box {
         width: 100%;
-        flex-direction: row;
-        gap: 8px;
+        max-width: 100%;
+        gap: 10px;
     }
 
     .feature-box img,
@@ -961,64 +983,77 @@ footer .footer .footer-content {
         height: clamp(30px, 8vw, 40px);
     }
 
-    /* Properties Section */
     .property-cards {
         grid-template-columns: 1fr;
         gap: 15px;
-        position: relative;
-        z-index: 10;
-        /* always on top */
+        margin: 20px 0 30px;
     }
 
     .p-card {
         width: 95%;
-        max-width: 100%;
     }
 
-    /* Deals Section */
+    .Deal {
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
     .Deal .top,
     .Deal .bottom {
         flex-direction: column;
-        gap: 10px;
-        align-items: center;
+        gap: 12px;
     }
 
     .Deal-box {
         width: 95%;
-    }
-
-    .bottom {
+        display: flex;
         flex-direction: column;
-        gap: 10px;
-        padding: 0 10px;
+        align-items: center;
     }
 
-    /* Contact Section */
+    .Deal-box img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px;
+    }
+
+    .contact-us {
+        width: 100%;
+        padding: 20px 0;
+    }
+
     .contact-us .maps-form {
         flex-direction: column;
-        gap: 10px;
-        align-items: center;
+        gap: 12px;
     }
 
     .contact-us .maps-form iframe,
     .contact-us .maps-form .forms {
         width: 95%;
+        max-width: 400px;
         height: auto;
     }
 
     .cont-card {
         flex-direction: column;
-        gap: 8px;
-        bottom: auto;
-        left: auto;
+        gap: 10px;
         width: 95%;
         margin: 0 auto;
     }
 
-    /* Footer */
     footer .footer {
         flex-direction: column;
-        height: auto;
-        padding: 10px 0;
+        padding: 12px 0;
+        gap: 8px;
+    }
+
+    .v-cards {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
     }
 }

@@ -284,3 +284,195 @@ footer .footer .footer-content {
 
 
 /* media-querie */
+
+@media (max-width: 992px) {
+    .info {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 6px 15px;
+        height: auto;
+    }
+
+    .info span {
+        font-size: 13px;
+        padding-right: 20px;
+    }
+
+    .info .right {
+        font-size: 18px;
+        gap: 8px;
+    }
+
+    .nav2 {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        height: 85px;
+        padding: 10px 20px;
+    }
+
+    .nav2 h1 {
+        font-size: 28px;
+        padding: 0 10px;
+    }
+
+    .nav2 ul {
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    .nav2 ul li {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+
+    .nav2 ul button {
+        width: 100px;
+        height: 28px;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .property-banner img {
+        width: 100%;
+        min-height: 500px;
+        object-fit: cover;
+    }
+
+    .p-banner-cont {
+        bottom: 280px;
+        font-size: 20px;
+    }
+
+    .p-banner-cont h1 {
+        font-size: 20px;
+    }
+
+    .property-btn {
+        bottom: 100px;
+    }
+
+    .property-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+        justify-items: center;
+        bottom: 50px;
+    }
+
+    .p-card {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .scroll-btn {
+        padding-bottom: 30px;
+    }
+
+    footer .footer {
+        height: auto;
+        flex-direction: column;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        padding: 5px 10px;
+        height: auto;
+    }
+
+    .info span {
+        font-size: 12px;
+        padding-right: 0;
+    }
+
+    .info .right {
+        font-size: 16px;
+        gap: 5px;
+    }
+
+    .nav2 {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 85px;
+        padding: 8px 10px;
+    }
+
+    .nav2 h1 {
+        font-size: 22px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav2 ul {
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    .nav2 ul li {
+        padding: 3px 5px;
+        font-size: 12px;
+    }
+
+    .nav2 ul button {
+        width: 90px;
+        height: 28px;
+        font-size: 11px;
+        margin-right: 5px;
+    }
+
+    .property-banner img {
+        width: 100%;
+        min-height: 80vh;
+        object-fit: cover;
+    }
+
+    .p-banner-cont {
+        bottom: 280px;
+        font-size: 18px;
+    }
+
+    .p-banner-cont h1 {
+        font-size: 20px;
+    }
+
+    .property-btn {
+        bottom: 80px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .property-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+        column-gap: 0;
+        justify-items: center;
+        bottom: 0;
+    }
+
+    .p-card {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .scroll-btn {
+        padding-bottom: 20px;
+    }
+
+    footer .footer {
+        height: auto;
+        flex-direction: column;
+        padding: 12px 0;
+    }
+}
