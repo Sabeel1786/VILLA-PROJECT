@@ -683,9 +683,7 @@ footer .footer .footer-content {
 }
 
 
-/* ==============================
-   Responsive Media Queries
-============================== */
+/* media queries */
 
 @media (max-width: 992px) {
     .info {
@@ -764,7 +762,7 @@ footer .footer .footer-content {
         position: absolute;
         left: 5%;
         bottom: 50%;
-        font-size: clamp(18px, 4vw, 26px);
+        font-size: 4vw;
         margin: 0;
     }
 
@@ -776,7 +774,7 @@ footer .footer .footer-content {
     }
 
     .feature-box {
-        flex: 1 1 calc(50% - 20px);
+        width: 48%;
         min-width: 220px;
         max-width: 300px;
         height: auto;
@@ -789,13 +787,17 @@ footer .footer .footer-content {
     .feature-box img,
     .feature-box svg,
     .feature-box .icon {
-        width: clamp(40px, 6vw, 50px);
-        height: clamp(40px, 6vw, 50px);
+        width: 6vw;
+        height: 6vw;
+        max-width: 50px;
+        max-height: 50px;
+        min-width: 40px;
+        min-height: 40px;
     }
 
     .property-cards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
         justify-items: center;
         align-items: stretch;
@@ -839,7 +841,7 @@ footer .footer .footer-content {
     }
 
     .Deal-box {
-        flex: 1 1 220px;
+        width: 45%;
         max-width: 250px;
         margin-bottom: 20px;
         display: flex;
@@ -960,7 +962,7 @@ footer .footer .footer-content {
         position: absolute;
         left: 5%;
         bottom: 50%;
-        font-size: clamp(16px, 5vw, 22px);
+        font-size: 5vw;
         margin: 0;
     }
 
@@ -979,8 +981,12 @@ footer .footer .footer-content {
     .feature-box img,
     .feature-box svg,
     .feature-box .icon {
-        width: clamp(30px, 8vw, 40px);
-        height: clamp(30px, 8vw, 40px);
+        width: 8vw;
+        height: 8vw;
+        max-width: 40px;
+        max-height: 40px;
+        min-width: 30px;
+        min-height: 30px;
     }
 
     .property-cards {
